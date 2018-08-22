@@ -1,16 +1,73 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popup.js"></script>
     <style>
-        button {width:100px;}
-        button ~ button {margin-top:10px;}
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .successshow {
+            display: none;
+            width: 100px;
+            font-size: 16px;
+            vertical-align: middle;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #showselect {
+            display: none;
+        }
+
+        #allPaste {
+            list-style: none;
+            padding: 6px 15px;
+            min-width: 130px;
+            vertical-align: middle;
+            width: initial;
+            display: none;
+            float: left;
+            max-height: 290px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        #allPaste li {
+            padding: 5px 30px 5px 10px;
+            height: 20px;
+            width: initial;
+            white-space: nowrap;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        #allPaste li input {
+            vertical-align: text-bottom;
+            margin-bottom: 1px;
+            *margin-bottom: -1px;
+            float: left;
+        }
+        .item-green{
+            background-color:#56a36c; 
+            color: white;
+            border-radius: 6px;
+        }
     </style>
 </head>
-<body>
 
+<body>
+    <ul id="allPaste">
+    </ul>
+    <span class="successshow">paste success!</span>
 </body>
+
 </html>

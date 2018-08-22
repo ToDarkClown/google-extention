@@ -1,13 +1,16 @@
 ﻿{
   "name": "Enginuity Copy Data Extension",
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "1.1",
   "description": "The extension for copy data.",
   "browser_action": {
     "default_icon": "image/Adsystech.png",
-    "default_title": "Enginuity Copy Data"
+    "default_title": "Enginuity Copy Data",
+    "default_popup": "popup.html"
   },
   "permissions" : [
+    "http://*/*", 
+    "https://*/*", 
     "declarativeContent",
     "tabs",
     "storage"
